@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Short URL </h1>
+    <form action="/shortUrls" method="POST">
+        <label for="fullUrl">URL</label>
+        <input type="url" name="fullUrl" id="fullUrl">
+        <button type="submit">Short</button>
+    </form>
+
+    <div>
+        <h3>Short Url</h3>
+        <a href="<%= shortUrls.short %>">
+            <%= shortUrls.short %>
+        </a>
+    </div>
+
+
+</body>
+
+</html>
